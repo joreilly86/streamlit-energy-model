@@ -51,4 +51,4 @@ if st.button('Calculate'):
 
     # display the available energy
     st.markdown(f'### Available Energy: {formatted_energy} MWh')
-    st.markdown(f'- For every 1000 MWh of energy, you could charge {1000 / available_energy:.0f} Tesla Model S cars.')
+    st.markdown(f'- For every 1000 MWh of energy, you could charge {available_energy / 1000:.0f} Tesla Model S cars.')

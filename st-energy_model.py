@@ -2,6 +2,8 @@ import streamlit as st
 
 st.title('Pumped Storage Hydropower Energy Model App 💡')
 
+st.image('image.png', caption='Pumped Storage Hydro Project.')
+
 st.markdown("""
 This app calculates the available energy (in MWh) in a hypothetical reservoir system. 
 The user provides parameters such as the levels and volumes of the upper and lower reservoirs, 
@@ -19,7 +21,7 @@ upper_reservoir_level = st.number_input('Upper Reservoir Level (m)', value=10000
 lower_reservoir_level = st.number_input('Lower Reservoir Level (m)', value=2000.0)  # meters
 upper_reservoir_volume = st.number_input('Upper Reservoir Volume (cubic meters)', value=120000.0)  # cubic meters
 lower_reservoir_volume = st.number_input('Lower Reservoir Volume (cubic meters)', value=40000.0)  # cubic meters
-pump_efficiency = st.number_input('Pump Efficiency (decimal)', value=0.8)  # decimal
+pump_efficiency = st.number_input('Pump Efficiency (decimal)', value=0.95)  # decimal
 generator_efficiency = st.number_input('Generator Efficiency (decimal)', value=0.9)  # decimal
 
 if st.button('Calculate'):
@@ -49,3 +51,4 @@ if st.button('Calculate'):
 
     # display the available energy
     st.markdown(f'### Available Energy: {formatted_energy} MWh')
+    st.markdown(f'- For every 1000 MWh of energy, you could charge {1000 / available_energy:.0f} Tesla Model S cars.')

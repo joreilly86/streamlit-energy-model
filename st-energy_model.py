@@ -2,6 +2,8 @@ import streamlit as st
 
 st.title('Pumped Storage Hydropower Energy Model App 💡')
 
+st.image('image.png', caption='Pumped Storage Hydro Project.')
+
 st.markdown("""
 This app calculates the available energy (in MWh) in a hypothetical reservoir system. 
 The user provides parameters such as the levels and volumes of the upper and lower reservoirs, 

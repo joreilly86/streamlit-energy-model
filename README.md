@@ -4,6 +4,8 @@
 
 This GitHub repository contains code for a Streamlit application that calculates the available energy (in MWh) in a pumped storage hydroelectric reservoir system.
 
+Streamlit app is here [Pumped Storage Hydropower - Energy Model](https://pumped-storage-energy-model.streamlit.app/).
+
 ## Features 🎯
 
 - User-input for reservoir levels and volumes
